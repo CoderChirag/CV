@@ -43,7 +43,7 @@ span{
 footer{
     text-align: center;
     background-color: #009688;
-    margin-top: 60px;
+    margin-top: 65px;
     padding: 5px;
     color: white;
 }
@@ -59,9 +59,7 @@ footer i:hover{
     margin-top: 25px;
     margin-left: 10%;
     margin-right: 5%;
-    max-width: 1200px;
 }
-
 /* Parent Container */
 .row{
     display: flex;
@@ -180,8 +178,14 @@ footer i:hover{
     padding-right: 30px;
 }
 
+/* For very low width Devices like i-phone 5 */
+@media only screen and (max-width: 350px){
+    footer{
+        margin-top: 360px;
+    }
+}
 /* For Mobile Phones */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px)and (min-width: 350px){
     .col1{
         flex: 100%;
         margin-bottom: 25px;
@@ -192,7 +196,7 @@ footer i:hover{
         margin-left: 7%;
     }
     footer{
-        margin-top: 200px;
+        margin-top: 300px;
     }
 
 }
