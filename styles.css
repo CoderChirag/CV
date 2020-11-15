@@ -1,0 +1,225 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+body, h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto", sans-serif;
+}
+h1{
+    color: #757575;
+    font-weight: 400;
+    margin-top: 1%;
+}
+h4{
+    margin-top: 30px;
+    color: #666666;
+    margin-left: 4%;
+}
+i {
+    color: #009688;
+    font-size: 1.6em;
+    margin-left: 4%;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+hr{
+    margin: 30px 7%;
+    margin-top: 40px;
+    border-color: #F6F6F6;
+    opacity: 0.2;
+}
+span{
+    color: #fff;
+    background-color: #009688;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 3px 8px;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: #009688;
+    margin-top: 60px;
+    padding: 5px;
+    color: white;
+}
+footer i{
+    color: white;
+    cursor: pointer;
+}
+footer i:hover{
+    opacity: 0.5;
+}
+
+.page-container{
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 5%;
+    max-width: 1200px;
+}
+
+/* Parent Container */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    background-color: #f1f1f1;
+    flex-direction: row;
+}
+
+/* Left Column */
+.col1{
+    flex: 30%;
+    background-color: white;
+    margin-right: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19)
+}
+.fa-phone{
+    transform: rotate(90deg);
+}
+#title-icon{
+    font-size: 1em !important;
+}
+.title p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Image Avatar */
+.image-container{
+    position: relative;
+}
+.avatar-text{
+    font-size: 2.5em;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-weight: 500;
+}
+
+/* Details Section */
+.details{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.details p, .title, .skills p, .languages p{
+    color: #877575;
+}
+.details p:first-of-type{
+    word-break: keep-all;
+}
+
+/* Skills Section and Language Section*/
+.skill-div, .languages-div{
+    background-color: #f1f1f1;
+    width: 90%;
+    height: 18px; 
+    margin-left: auto;
+    margin-right: auto;   
+    border-radius: 16px;
+}
+.skillno, .langno{
+    height: 18px;
+    background-color: #009688;
+    border-radius: 16px;
+}
+.skillno p{
+    font-size: 0.8rem;
+    padding-top: 2px;
+    text-align: center;
+    color: white;
+}
+.languages-div, .langno{
+    height: 25px;
+}
+.languages-div{
+    margin-bottom: 20px;
+}
+
+
+/* Right Column */
+.col2{
+    flex: 65%;
+    height: 1015px;
+    background-color:#f1f1f1;
+}
+.col2-parent{
+    display: flex;
+    /* flex-flow: wrap column; */
+    flex-direction: column;
+    background-color: #f1f1f1;
+}
+.part1{
+    width: 100%;
+    /* height: 500px; */
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    padding: 40px 10px;
+    padding-right: 30px;
+}
+.part1 p, .part2 p{
+    margin-left: 8%;
+}
+/* About me Section */
+.fa-info, .fa-trophy, .fa-certificate, .fa-calendar{
+    font-size: 1em !important;
+    margin-left: 8% !important;
+}
+
+.part2{
+    width: 100%;
+    /* height: 500px; */
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    padding: 40px 10px;
+    padding-right: 30px;
+}
+
+/* For Mobile Phones */
+@media only screen and (max-width: 600px){
+    .col1{
+        flex: 100%;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+    .page-container{
+        margin-right: 4%;
+        margin-left: 7%;
+    }
+    footer{
+        margin-top: 200px;
+    }
+
+}
+/* For Tablets */
+@media only screen and (max-width: 800px){
+    .page-container{
+        margin-left: 7%;
+    }
+    .avatar-text{
+        font-size: 1.8rem;
+    }
+}
+/* For Large Tablets/Ipads and small Laptops */
+@media only screen and (min-width: 900px){
+    .languages-div, .langno{
+        height: 20px;
+    }
+    .col1{
+        line-height: 10px;
+    }
+    hr{
+    margin-top: 20px;
+    }
+}
+/* For laptops */
+@media only screen and (max-width: 1250px) and (min-width: 600px){
+    .col2{
+        line-height: 17px;
+    }
+}
